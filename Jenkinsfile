@@ -12,7 +12,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'apk add curl'
-                sh 'curl -X POST -H \'Content-type: application/json\' --data @./jenkins/scripts/slack1.json https://hooks.slack.com/services/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'
+                sh 'curl -X POST -H \'Content-type: application/json\' --data @./jenkins/scripts/slack1.json https://hooks.slack.com/services/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'
                 sh 'npm install' 
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'apk add curl'
                 input message: 'Request Certified Deployment (Click "Proceed" to continue)'
-                sh 'curl -X POST -H \'Content-type: application/json\' --data @./jenkins/scripts/slack1.json https://hooks.slack.com/services/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'
+                sh 'curl -X POST -H \'Content-type: application/json\' --data @./jenkins/scripts/slack1.json https://hooks.slack.com/services/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'
             }
         }
         stage('Deliver') {
