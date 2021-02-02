@@ -9,6 +9,11 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('Message') {
+            steps {
+                sh 'curl -X POST -H \'Content-type: application/json\' --data \'{"text":"Hello, World!"}\' https://hooks.slack.com/services/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'
+            }
+        }
         stage('Build') { 
             steps {
                 sh 'npm install' 
