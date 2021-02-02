@@ -19,11 +19,11 @@ pipeline {
                 sh './jenkins/scripts/test.sh'
             }
         }
-        stage('Message') {
+        stage('Certified Deploy') {
             steps {
                 sh 'apk add curl'
                 input message: 'Request Certified Deployment (Click "Proceed" to continue)'
-                sh 'curl -X POST -H \'Content-type: application/json\' --data @./jenkins/scripts/slack1.json https://hooks.slack.com/services/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'
+                sh 'curl -X POST -H \'Content-type: application/json\' --data @./jenkins/scripts/slack1.json https://hooks.slack.com/services/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'
             }
         }
         stage('Deliver') {
