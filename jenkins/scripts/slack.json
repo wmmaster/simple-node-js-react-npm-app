@@ -1,0 +1,17 @@
+{
+    "text": "Deployment request for D342134", 
+    "blocks": [
+        {
+            "type": "section", 
+            "text": "Deployment request for D342134",
+            "accessory": {
+                "type": "button",
+                "text": {
+                    "type": "plain_text",
+                    "text": "View",
+                    "emoji": true
+                }
+            }
+        }
+    ]
+}

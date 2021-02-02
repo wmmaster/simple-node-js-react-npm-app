@@ -1,0 +1,68 @@
+{
+    "channel": "certified-deploys",
+    "text": "New certified deploy request from Will",
+    "blocks": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "Certified Deploys Request"
+            }
+        },
+        {
+            "type": "section",
+            "fields": [
+                {
+                    "type": "mrkdwn",
+                    "text": "*Type:*\nDeploy"
+                },
+                {
+                    "type": "mrkdwn",
+                    "text": "*Created by:*\n<example.com|Will>"
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "fields": [
+                {
+                    "type": "mrkdwn",
+                    "text": "*Target:*\nProduction"
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "<https://example.com|View request>"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "actionblock789",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Approve"
+                    },
+                    "style": "primary",
+                    "value": "approve",
+                    "action_id": "button1"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Deny"
+                    },
+                    "style": "danger",
+                    "value": "deny",
+                    "action_id": "button2"
+                }
+            ]
+        }
+    ]
+}
